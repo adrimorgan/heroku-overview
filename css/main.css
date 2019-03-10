@@ -1,0 +1,9 @@
+/**
+    Hojas de estilo propias, externas a Reveal.js - Adrián Morente Gabaldón
+*/
+
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
