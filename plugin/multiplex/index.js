@@ -55,7 +55,7 @@ var createHash = function(secret) {
 };
 
 // Actually listen
-server.listen( opts.port || null );
+server.listen( process.env.PORT || port );
 
 var brown = '\033[33m',
 	green = '\033[32m',

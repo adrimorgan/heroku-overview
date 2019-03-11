@@ -55,13 +55,13 @@ app.get( '/notes/:socketId', function( req, res ) {
 });
 
 // Actually listen
-server.listen( opts.port || null );
+server.listen( process.env.PORT || port );
 
 var brown = '\033[33m',
 	green = '\033[32m',
 	reset = '\033[0m';
 
-var slidesLocation = 'http://localhost' + ( opts.port ? ( ':' + opts.port ) : '' );
+var slidesLocation = 'http://localhost' + ( process.env.PORT ? ( ':' + process.env.PORT ) : '' );
 
 console.log( brown + 'reveal.js - Speaker Notes' + reset );
 console.log( '1. Open the slides at ' + green + slidesLocation + reset );
