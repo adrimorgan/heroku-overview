@@ -233,9 +233,33 @@
 					</aside>
 				</section>
 
-				<!-- Prestaciones y pruebas -->
+				<!-- Prestaciones -->
 				<section>
-					<h3>Prestaciones y pruebas</h3>
+					<h3>Prestaciones</h3>
+					<p>Heroku permite distintos tipos de ajuste del rendimiento necesario:</p>
+					<ul>
+						<li>Escalado (manual o automático).</li>
+						<li><i>HTTP caching</i> (a través de <i>CDN</i>).</li>
+						<li><i>Workers</i> y trabajo en segundo plano.</li>
+					</ul>
+
+					<aside class="notes">
+						- Escalado automático solo permitido en los dynos más caros.
+						- Se cachean los assets estáticos para brindar más velocidad. No soportado sin configuración por parte de Heroku.
+						- Trabajos en segundo plano como consultas a API externa, redimensión de imágenes, etc.
+					</aside>
+				</section>
+
+				<!-- Escalado manual -->
+				<section>
+					<h3>Escalado manual (<i>CLI</i> o <i>GUI</i>)</h3>
+					<p>Escalado horizontal</p>
+					<img src="img/heroku-scaling-cli-1.png" alt="Escalado horizontal mediante CLI" />
+
+					<br /><p>Escalado vertical</p>
+					<img src="img/heroku-scaling-cli-2.png" alt="Escalado vertical mediante CLI" />
+
+					<br /><p>Escalado automático disponible para <i>Performance-tier</i>.</p>
 				</section>
 
 				<!-- Gestión de transacciones -->
@@ -246,8 +270,9 @@
 				<!-- Gracias y buenas tardes -->
 				<section>
 					<h3>¡Gracias!</h3>
-					<p>Transparencias basadas en <a href="https://revealjs.com/#/">Reveal.js</a>.</p>
-					<a href="https://github.com/adrianmorente/heroku-overview">github.com/adrianmorente/heroku-overview</a>
+					<p>Diapositivas basadas en <a href="https://revealjs.com/#/">Reveal.js</a>.</p>
+					<p>Imágenes tomadas de la <a href="https://devcenter.heroku.com/categories/reference">documentación de Heroku</a>.</p>
+					<p>Material en <a href="https://github.com/adrianmorente/heroku-overview">github.com/adrianmorente/heroku-overview</a></p>
 				</section>
 
 			</div>
