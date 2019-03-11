@@ -46,7 +46,7 @@
 					<ul>
 						<li>Plataforma <i>cloud</i> para <b>construir</b>, <b>desplegar</b>, <b>monitorizar</b> y <b>desplegar</b> aplicaciones.</li>
 						<li>Planes <b>Dynos</b> de distinto volumen (y <b>precio</b>).</li>
-						<li>Herramienta CLI para desarrollo y gestión.</li>
+						<li>Herramientas GUI y CLI para desarrollo y gestión.</li>
 						<li>Soporte para equipos y empresas.</li>
 					</ul>
 				
@@ -77,7 +77,7 @@
 					<img src="img/heroku-platform-2.png" alt="Developer experience" />
 
 					<aside class="notes">
-						El programador despliega su código en Heroku (de distintas formas que comentaremos a continuación).
+						El programador despliega su código en Heroku (a través de CLI o automáticamente desde Git).
 					</aside>
 				</section>
 
@@ -148,12 +148,12 @@
 					<h5><a href="https://devcenter.heroku.com/"><i>Dev Center</i></a></h5>
 					<ul>
 						<li>Guía rápida para distintos lenguajes (usa <i>Procfile</i>).</li>
-						<li>Integración continua.</li>
-						<li>Despliegue automático desde <i>CLI</i> o <i>Git</i>.</li>
-						<li>Despliegue con imágenes de Docker (propias o de 
+						<li><b>Integración continua</b> y despliegue automático desde <i>CLI</i> o <i>Git</i>.</li>
+						<li>Despliegue con imágenes de <b>Docker</b> (propias o de 
 							<a href="https://devcenter.heroku.com/articles/container-registry-and-runtime">Container Registry</a>.</li>
+						<li><a href="https://elements.heroku.com/addons">
+							<b>Instrumentación</b></a> con <i>add-ons</i>.</li><br />
 					</ul>
-					<br />
 					<img src="img/heroku-languages.png" alt="Lenguajes soportados por Heroku" />
 
 					<aside class="notes">
@@ -170,7 +170,7 @@
 
 					<aside class="notes">
 						- Resume las distintas fases por las que DEBE pasar un proyecto (desarrollo, review, pruebas y producción).
-						- La idea es tener distintas instancias de distintas versiones de la aplicación.
+						- La idea es tener diferentes instancias de distintas versiones de la aplicación.
 					</aside>
 				</section>
 
@@ -179,8 +179,8 @@
 					<h3><a href="https://devcenter.heroku.com/categories/collaboration">Colaboración</a></h3>
 					<ul>
 						<li><b>Proyecto simple</b>: permisos de acceso.</li>
-						<li><b>Equipos</b>: gratis (&lt;5 miembros), de pago (6-25 miembros, 10$/mes).</li>
-						<li><b><i>Enterprise</i></b>: equipos más grandes, con roles, espacios privados, etc.</li>
+						<li><b>Equipos</b>: <b>gratis</b> (&lt;5 miembros), <b>de pago</b> (6-25 miembros, 10$/mes).</li>
+						<li><b><i>Enterprise</i></b>: equipos más grandes, con roles, <b>espacios privados</b>, etc.</li>
 					</ul>
 					<p>En equipos, los <i>dynos</i> gratuitos no están disponibles, solo las instancias de pago.</p>
 
@@ -222,9 +222,14 @@
 					</aside>
 				</section>
 
-				<!-- Monitorización e instrumentación -->
+				<!-- Gestión de transacciones -->
 				<section>
-					<h3>Monitorización e instrumentación</h3>
+					<h3>Gestión de transacciones</h3>
+				</section>
+
+				<!-- Monitorización -->
+				<section>
+					<h3>Monitorización</h3>
 					<p>El <a href="https://dashboard.heroku.com"><i>dashboard</i></a> permite supervisar y gestionar los distintos servicios.</p>
 					<img src="img/heroku-dashboard.png" alt="Dashboard de Heroku" />
 
@@ -262,17 +267,12 @@
 					<br /><p>Escalado automático disponible para <i>Performance-tier</i>.</p>
 				</section>
 
-				<!-- Gestión de transacciones -->
-				<section>
-					<h3>Gestión de transacciones</h3>
-				</section>
-
 				<!-- Gracias y buenas tardes -->
 				<section>
 					<h3>¡Gracias!</h3>
 					<p>Diapositivas basadas en <a href="https://revealjs.com/#/">Reveal.js</a>.</p>
 					<p>Imágenes tomadas de la <a href="https://devcenter.heroku.com/categories/reference">documentación de Heroku</a>.</p>
-					<p>Material en <a href="https://github.com/adrianmorente/heroku-overview">github.com/adrianmorente/heroku-overview</a></p>
+					<p>Material en <a href="https://github.com/adrianmorente/heroku-overview">github.com/adrianmorente/heroku-overview</a>.</p>
 				</section>
 
 			</div>
