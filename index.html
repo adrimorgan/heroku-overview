@@ -107,7 +107,7 @@
 
 					<aside class="notes">
 						La aplicación se nutre por otro lado de los "servicios de respaldo" (como pueden ser bases de
-						datos, sistemas de e-mail, etc.).
+						datos, sistemas de e-mail, sistema de logs, etc.).
 					</aside>
 				</section>
 
@@ -160,24 +160,68 @@
 					</aside>
 				</section>
 
+				<!-- Pipelines -->
+				<section>
+					<h3>Desarrollo - <a href="https://devcenter.heroku.com/articles/pipelines">Pipelines</a></h3>
+					<img src="img/heroku-pipeline.png" alt="Pipelines en Heroku" />
+
+					<aside class="notes">
+						- Resume las distintas fases por las que DEBE pasar un proyecto (desarrollo, review, pruebas y producción).
+						- La idea es tener distintas instancias de distintas versiones de la aplicación.
+					</aside>
+				</section>
+
 				<!-- Colaboración -->
 				<section>
-					<h3>Colaboración</h3>
+					<h3><a href="https://devcenter.heroku.com/categories/collaboration">Colaboración</a></h3>
+					<ul>
+						<li><b>Proyecto simple</b>: permisos de acceso.</li>
+						<li><b>Equipos</b>: gratis (&lt;5 miembros), de pago (6-25 miembros, 10$/mes).</li>
+						<li><b><i>Enterprise</i></b>: equipos más grandes, con roles, espacios privados, etc.</li>
+					</ul>
+					<p>En equipos, los <i>dynos</i> gratuitos no están disponibles, solo las instancias de pago.</p>
+
+					<aside class="notes">
+						- El proyecto simple con permisos de acceso funciona como cualquier repositorio normal de Github.
+						- Los equipos se rigen también por permisos y permiten compartir proyectos.
+						- Enterprise es opción para equipos mucho más numerosos y con distintos roles.
+					</aside>
+				</section>
+
+				<!-- Ejemplo de Teams -->
+				<section>
+					<h3><a href="">Heroku Teams</a></h3>
+					<img src="img/heroku-teams.png" alt="Heroku Teams" />
+
+					<aside class="notes">
+						Un equipo consta de administradores y miembros (con distintos permisos).
+					</aside>
 				</section>
 
 				<!-- Manejo de datos -->
 				<section>
 					<h3>Manejo de datos</h3>
+					<ul>
+						<li><i>Heroku Postgres</i>: servicio DDBB relacional <i>(SQL)</i>.</li>
+						<li><i>Heroku Redis</i>: almacén clave-valor <i>(in-memory)</i>.</li>
+						<li><i>Apache Kafka on Heroku</i>: envío de mensajes en "tiempo real". Patrón Pub/Sub.</li>
+					</ul>
+					<p><a href="https://devcenter.heroku.com/categories/data-management">
+						Servicios ajenos a Heroku pero provistos de forma cómoda al desarrollador.
+					</a></p>
+
+					<aside class="notes">
+						- Postgres: servicio SQL comúnmente conocido.
+						- Redis. servicio mantenido en memoria principal, alta velocidad.
+						Ambos son servicios ya conocidos y externos a Heroku pero Heroku te provee con una forma de instalar
+						estos servicios de forma cómoda y tenerlos accesibles para acceder desde cualquier lenguaje.
+						- Kafka: patrón Publish-Subscribe para streaming de datos en tiempo real.
+					</aside>
 				</section>
 
 				<!-- Instrumentación, prestaciones y pruebas -->
 				<section>
 					<h3>Instrumentación, prestaciones y pruebas</h3>
-				</section>
-
-				<!-- Almacenamiento -->
-				<section>
-					<h3>Almacenamiento</h3>
 				</section>
 
 				<!-- Gestión de transacciones -->
