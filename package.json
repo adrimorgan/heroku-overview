@@ -1,7 +1,7 @@
 {
   "name": "reveal.js",
   "version": "3.7.0",
-  "description": "The HTML Presentation Framework",
+  "description": "Heroku overview based on The HTML Presentation Framework",
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
@@ -11,13 +11,13 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
+    "name": "Adrián Morente Gabaldón (plantilla de Reveal.js - Hakim El Hattab, hakim.elhattab@gmail.com)",
+    "email": "adrian95morente@gmail.com",
     "web": "http://hakim.se"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/adrianmorente/heroku-overview.git"
   },
   "engines": {
     "node": ">=4.0.0"
