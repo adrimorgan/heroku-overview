@@ -8,7 +8,7 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt serve"
+    "build": "grunt"
   },
   "author": {
     "name": "Adrián Morente Gabaldón (plantilla de Reveal.js - Hakim El Hattab, hakim.elhattab@gmail.com)",
